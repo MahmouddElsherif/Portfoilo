@@ -1,0 +1,30 @@
+.FooterDesign{
+  background-color: #2C3E50;
+}
+
+
+
+
+.innerOfSocialMedia{
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  
+}
+
+.copyRights{
+  background-color: #1A252F;
+}
+
+
+@media screen and (max-width: 767px) {
+  .FooterDesign .row{
+    gap: 40px;
+  }
+  
+}

@@ -1,0 +1,47 @@
+.homeComponent{
+  padding: 40px;
+  height:650px;
+}
+.homeComponentTilte{
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+  
+}
+
+.designParagraphAbout{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.homeComponentTilte::before{
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 5px;
+  background-color: white;
+  /* top: 5px; */
+  /* right: 40px; */
+  transform: translate(85px , 80px);
+}
+
+
+
+.homeComponentTilte::after{
+  content: '\f005';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 10px;
+  text-decoration: none;
+  font-size: 30px;
+  position: absolute;
+  width: 57px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #1ABC9C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(160px , 10px);
+}

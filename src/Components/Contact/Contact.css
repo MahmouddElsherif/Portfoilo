@@ -1,0 +1,80 @@
+.contactComponent h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #2C3E50;
+  position: relative;
+}
+
+.contactComponent h2::before{
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 5px;
+  background-color: #2C3E50;
+   top: 50%;
+   right: 50%;
+  transform: translate( 50% , calc(50% + 44px));
+}
+
+
+.contactComponent h2::after{
+  content: '\f005';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 10px;
+  text-decoration: none;
+  font-size: 30px;
+  position: absolute;
+  width: 57px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 50%;
+  transform: translate(50% , 50%);
+}
+
+
+
+.formDesign{
+  width: 70%;
+}
+
+
+.edit button {
+  --bs-btn-color: white;
+  --bs-btn-bg: #1ABC9C;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #1ABC9C;
+  --bs-btn-hover-border-color: #25cff2;
+
+}
+
+
+.formDesign input{
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+
+.formDesign input:focus{
+  border: 0px solid transparent;
+  border-radius: 0;
+
+  border-bottom: 1px solid rgb(220, 220, 220);
+
+
+}
+
+.formDesign label{
+  color: #1abc9c;
+  margin-left: 8px;
+ } 
+
+
+

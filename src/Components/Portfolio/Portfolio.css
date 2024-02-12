@@ -1,0 +1,114 @@
+.PortfolioTitle{
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    
+  }
+
+
+  .PortfolioTitle::before{
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 5px;
+    background-color: #2C3E50;
+     top: 50%; 
+     right: 50%; 
+    transform: translate(50% , calc(50% + 40px));
+  }
+
+
+
+  .PortfolioTitle::after{
+    content: '\f005';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    width: 57px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 50%;
+    transform: translate( 50%, calc(50%  + -2px  ) );
+  }
+  
+
+
+   @media screen and (max-width: 600px) {
+
+    .PortfolioTitle::before{
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 5px;
+      background-color: #2C3E50;
+      top: 50%; 
+      right: 50%; 
+      transform: translate(50% , calc( 50% + 60px));
+    }
+  
+
+    .PortfolioTitle::after{
+      content: '\f005';
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      margin: 0px 0px 0px 10px;
+      text-decoration: none;
+      font-size: 30px;
+      position: absolute;
+      width: 50px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      right: 50%;
+      transform: translate( 50%, calc(50%  + 25px  ) );
+    }
+    
+    
+  } 
+
+
+  .innerImgStyle .layer{
+    background-color: #29B197;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    opacity: 0;
+    transition: 0.5s all;
+
+  }
+
+  .styleIconPotrfolio{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .innerImgStyle:hover .layer{
+    opacity: 0.85;
+  }
+
+  .designBlock{
+    width: 80%;
+  }
+
+  .innerDivPorfolio{
+    cursor: pointer;
+  }
+
